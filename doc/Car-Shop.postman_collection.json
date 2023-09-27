@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "880d2bc0-1c68-4545-9d0c-f6b252268601",
+		"name": "Car Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19046047"
+	},
+	"item": [
+		{
+			"name": "Car Stock Consumer",
+			"item": [
+				{
+					"name": "Stock Actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/actuator",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"actuator"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stocks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/api/stocks",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"stocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Populate Stocks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/api/stocks/populate",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"stocks",
+								"populate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car Sales Producer",
+			"item": [
+				{
+					"name": "Sales Actuator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/actuator",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"actuator"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
